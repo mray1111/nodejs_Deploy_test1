@@ -22,7 +22,10 @@ app.use(express.json())
 
 //import routes 
 const notes=require("./Routes/Notes")
+const user=require("./Routes/Auth")
+
 app.use("/api/notes",notes)
+app.use("/api/auth",user)
 
 
 app.get("/",(req,res)=>{
