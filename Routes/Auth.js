@@ -9,7 +9,6 @@ const JWT_SECRET = process.env.JWT_SECRET_KEY || 'this_is_a_jwt_secret_key';
 
 
 const { body, validationResult } = require("express-validator");
-const fetchuser = require("../Middleware/Fetchuser");
 
 //registration route
 router.post(
